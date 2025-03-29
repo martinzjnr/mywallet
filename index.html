@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTCBR Token Wallet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="wallet-container">
+        <header class="wallet-header">
+            <div class="logo">
+                <i class="fa-solid fa-bitcoin-sign"></i>
+                <span>BTCBR Wallet</span>
+            </div>
+            <div class="header-actions">
+                <button class="icon-button">
+                    <i class="fa-solid fa-bell"></i>
+                </button>
+                <button class="icon-button">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+            </div>
+        </header>
+
+        <main class="wallet-main">
+            <div class="wallet-card">
+                <div class="accent-line"></div>
+                
+                <div class="card-header">
+                    <div class="token-info">
+                        <i class="fa-solid fa-wallet"></i>
+                        <h2>BTCBR Token</h2>
+                    </div>
+                    <div class="token-badge">6D8</div>
+                </div>
+                
+                <div class="card-content">
+                    <div class="balance-section" id="balance-container">
+                        <div class="label">Balance</div>
+                        <div class="balance-value" id="balance-display">8749321...9321</div>
+                        <div class="balance-hint">Click to view full balance</div>
+                    </div>
+                    
+                    <div class="divider"></div>
+                    
+                    <div class="value-section">
+                        <div class="label">Value (USD)</div>
+                        <div class="usd-value">
+                            <i class="fa-solid fa-dollar-sign"></i>
+                            <span id="usd-value">$374,642,891,234,567.00</span>
+                        </div>
+                    </div>
+                    
+                    <div class="action-buttons">
+                        <button class="btn btn-secondary">
+                            <i class="fa-solid fa-paper-plane"></i> Send
+                        </button>
+                        <button class="btn btn-primary">
+                            <i class="fa-solid fa-download"></i> Receive
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="card-footer">
+                    <div class="network-status">
+                        <span class="status-dot online"></span>
+                        <span class="status-text">Network: Online</span>
+                    </div>
+                    <div class="last-updated">
+                        Updated: <span id="update-time">Just now</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="transaction-section">
+                <div class="section-header">
+                    <h3>Recent Transactions</h3>
+                    <button class="text-button">View All</button>
+                </div>
+                
+                <div class="transaction-list">
+                    <div class="transaction-item">
+                        <div class="transaction-icon received">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="transaction-details">
+                            <div class="transaction-title">Received</div>
+                            <div class="transaction-date">Today, 10:42 AM</div>
+                        </div>
+                        <div class="transaction-amount positive">+0.0025 BTCBR</div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction-icon sent">
+                            <i class="fa-solid fa-arrow-up"></i>
+                        </div>
+                        <div class="transaction-details">
+                            <div class="transaction-title">Sent</div>
+                            <div class="transaction-date">Yesterday, 3:15 PM</div>
+                        </div>
+                        <div class="transaction-amount negative">-0.0018 BTCBR</div>
+                    </div>
+                    
+                    <div class="transaction-item">
+                        <div class="transaction-icon received">
+                            <i class="fa-solid fa-arrow-down"></i>
+                        </div>
+                        <div class="transaction-details">
+                            <div class="transaction-title">Received</div>
+                            <div class="transaction-date">May 12, 2023</div>
+                        </div>
+                        <div class="transaction-amount positive">+0.0105 BTCBR</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <nav class="wallet-nav">
+            <button class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </button>
+            <button class="nav-item">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Market</span>
+            </button>
+            <button class="nav-item">
+                <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                <span>Swap</span>
+            </button>
+            <button class="nav-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Profile</span>
+            </button>
+        </nav>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
